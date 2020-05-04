@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.display {
+  background-color: #333333;
+  width: 100%;
+  color: white;
+  padding: 10px 20px;
+  border: 1px solid black;
+  font-size: 2em;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.row {
+  display: flex;
+  /* height: 70px; */
+}
+
+.button {
+  flex-basis: 25%;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 40px;
+  background: -webkit-linear-gradient(top, #d2d2d2, #ddd);
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+.button:hover {
+  font-weight: bold;
+}
+.double {
+  flex-basis: 50%;
+}
+
+.negative,
+.operator,
+.equals {
+  background: orange;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+th {
+  background-color: orange;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #d2d2d2;
+}
+@media screen and (max-width: 513px) {
+  .button {
+    padding: 20px;
+  }
+
+  .history {
+    width: 100%;
+  }
+}
